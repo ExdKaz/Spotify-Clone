@@ -4,10 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Sample Images
 
-[images](src/assets/demo-images/dash.png)
-[images](src/assets/demo-images/login.png)
-[images](src/assets/demo-images/search.png)
-[images](src/assets/demo-images/search2.png)
+Dashboard:[images](src/assets/demo-images/dash.png)
+Login: [images](src/assets/demo-images/login.png)
+Search: [images](src/assets/demo-images/search.png)
+Search User: [images](src/assets/demo-images/search2.png)
 
 ## Development server
 
