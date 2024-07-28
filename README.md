@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
+# Sample Images
+
+[images](src/assets/demo-images/dash.png)
+[images](src/assets/demo-images/login.png)
+[images](src/assets/demo-images/search.png)
+[images](src/assets/demo-images/search2.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
