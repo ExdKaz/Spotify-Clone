@@ -1,0 +1,60 @@
+.lib-container {
+  display: grid;
+  row-gap: 1rem;
+  height: -webkit-fill-available;
+}
+
+.lib-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.lib-icons-right,
+.lib-icons-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.lib-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.items:hover {
+  background-color: #353535;
+  cursor: pointer;
+}
+
+.items-info-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-image {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.2rem;
+}
+
+.playlists-container {
+  overflow-y: auto;
+  height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

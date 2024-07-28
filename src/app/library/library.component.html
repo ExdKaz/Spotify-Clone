@@ -1,0 +1,31 @@
+<div class="lib-container">
+  <div class="lib-heading">
+    <div class="lib-icons-left grey-hover">
+      <i class="fa-regular fa-tally-3 fa-lg"></i>
+      <span class="h-font">Your Library</span>
+    </div>
+    <div class="lib-icons-right">
+      <i class="fa-regular fa-plus fa-lg grey-hover"></i>
+      <i class="fa-regular fa-arrow-right fa-lg grey-hover"></i>
+    </div>
+  </div>
+  <div class="lib-btns">
+    <button class="dark-btn" (click)="getLibrary('playlist')">Playlists</button>
+    <button class="dark-btn" (click)="getLibrary('artists')">Artists</button>
+    <button class="dark-btn" (click)="getLibrary('albums')">Albums</button>
+  </div>
+
+  <div class="playlists-container">
+    @for (items of library; track items ){
+    <div class="items">
+      <img class="items-image" [src]="items.url" alt="library.png" />
+      <div class="items-info-flex">
+        <span class="items-name">{{ items.name }}</span>
+        <span class="items-username"
+          >{{ items.type | titlecase }} {{ items.owner }}</span
+        >
+      </div>
+    </div>
+    }
+  </div>
+</div>

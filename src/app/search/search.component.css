@@ -1,0 +1,133 @@
+.card-name {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.browse-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 2rem;
+}
+
+.card-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.card {
+  display: grid;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.fa-circle-play {
+  color: var(--green);
+}
+
+.search-content {
+  padding: 1rem 0;
+}
+
+img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.top-card {
+  background-color: #191919;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.002rem;
+  border-radius: 0.2rem;
+}
+
+.track-name {
+  font-weight: 600;
+}
+
+.top-result {
+  display: grid;
+  grid-template-columns: repeat(2, 39% 59%);
+  gap: 2rem;
+}
+
+.items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.items:hover {
+  background-color: #353535;
+  cursor: pointer;
+}
+
+.items-info-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.songs-image {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.2rem;
+}
+
+.search-right {
+  height: 19%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-2xl {
+  font-size: 3em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.featuring {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  width: 73vw;
+  gap: 1rem;
+}
+
+.featuring-div {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+.featuring-card {
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.featuring-card:hover {
+  background-color: #191919;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  transition: linear 0.2ms;
+}
+
+.artist-img {
+  height: 10rem;
+  width: 10rem;
+  box-shadow: 0px 1px 10px 0px #000000;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 0.5rem;
+}

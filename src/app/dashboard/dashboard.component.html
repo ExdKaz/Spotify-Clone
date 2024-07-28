@@ -1,0 +1,38 @@
+<div class="dashboard">
+  <div class="left">
+    <div class="search-component fg-col grid-row-span-2">
+      <div class="home grey-hover" routerLink="/dashboard">
+        <i class="fa-solid fa-house fa-lg"></i>
+        <span class="h-font">Home</span>
+      </div>
+      <div
+        class="search grey-hover"
+        [routerLink]="[
+          '/dashboard',
+          {
+            outlets: {
+              main: ['search']
+            }
+          }
+        ]"
+        (click)="onSearch()"
+      >
+        <i class="fa-regular fa-magnifying-glass fa-lg"></i>
+        <span class="h-font">Search</span>
+      </div>
+    </div>
+    <div class="library-component fg-col">
+      <app-library />
+    </div>
+  </div>
+  <div class="right">
+    <div class="main fg-col-main">
+      <div class="nav">
+        <app-navbar />
+      </div>
+      <div class="router-outlet">
+        <router-outlet name="main" />
+      </div>
+    </div>
+  </div>
+</div>

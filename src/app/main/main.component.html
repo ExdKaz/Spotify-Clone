@@ -1,0 +1,37 @@
+<div class="main-container">
+  <div class="artists">
+    @for(artist of artists.items; track artist){
+    <div class="items">
+      <img class="items-image" [src]="artist.images[0].url" alt="library.png" />
+      <span class="items-name">{{ artist.name }}</span>
+    </div>
+    }
+  </div>
+  <h3>Top Shows</h3>
+  <div class="shows">
+    @for(show of shows; track show){
+    <div class="card">
+      <img [src]="show.images[0].url" alt="show.png" class="show-img" />
+      <span>{{ show.name }}</span>
+    </div>
+    }
+  </div>
+  <h3>New Releases</h3>
+  <div class="shows">
+    @for(releases of newReleases; track releases){
+    <div class="card">
+      <img [src]="releases.images[0].url" alt="show.png" class="show-img" />
+      <span>{{ releases.name }}</span>
+    </div>
+    }
+  </div>
+  <h3>Popular Playlists</h3>
+  <div class="shows">
+    @for(playlist of featuredPlaylists; track playlist){
+    <div class="card">
+      <img [src]="playlist.images[0].url" alt="show.png" class="show-img" />
+      <span>{{ playlist.name }}</span>
+    </div>
+    }
+  </div>
+</div>

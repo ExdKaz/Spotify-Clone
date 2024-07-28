@@ -1,1 +1,171 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-black: #000000;
+  --fg-black: #121212;
+  --green: #1ed760;
+  --btn1: #232323;
+  --white: #ffffff;
+  --grey: #b3b3b3;
+  --dark-btn: #2a2a2a;
+}
+
+html,
+body {
+  background-color: var(--bg-black);
+  color: var(--white);
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-btn {
+  background-color: var(--green);
+  color: var(--bg-black);
+  border: none;
+  width: 5rem;
+  height: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  width: 7rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: linear 0.2s;
+}
+
+.dark-btn {
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--dark-btn);
+  color: var(--grey);
+  width: 4.4rem;
+  height: 2rem;
+}
+
+.dark-btn:hover {
+  background-color: rgb(69, 69, 69);
+  color: var(--white);
+  opacity: 0.8;
+  transition: linear 0.2s;
+}
+
+.h-font {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--grey);
+}
+
+.h-font :hover {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.grey-hover {
+  color: var(--grey) !important;
+}
+
+.grey-hover:hover {
+  color: var(--white) !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #373737;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5b5b5b;
+}
+
+/* for screen less than 773px */
+@media only screen and (max-width: 773px) {
+  .h-font {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--grey);
+  }
+
+  .h-font :hover {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .home,
+  .search {
+    gap: 0.6rem !important;
+  }
+
+  .lib-heading {
+    gap: 0.4rem !important;
+  }
+
+  .fa-lg {
+    font-size: 1rem;
+  }
+
+  .fg-col {
+    padding: 0.5rem 0.5rem !important;
+  }
+}
+
+/* for screen greater than 1920 */
+@media only screen and (min-width: 1920px) {
+  .h-font {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--grey);
+  }
+
+  .h-font :hover {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  .home,
+  .search {
+    gap: 1.2rem !important;
+  }
+
+  .lib-heading {
+    gap: 1rem !important;
+  }
+
+  .fg-col {
+    padding: 1rem 1.5rem !important;
+  }
+
+  .left {
+    display: grid;
+    gap: 1%;
+    height: 90vh;
+    grid-template-rows: repeat(2, 15% 84.5%) !important;
+  }
+
+  nav {
+    height: 10vh !important;
+  }
+
+  .items-image {
+    height: 4rem !important;
+    width: 4rem !important;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+  }
+
+  .card-img {
+    width: 15rem !important;
+    height: 15rem !important;
+  }
+}

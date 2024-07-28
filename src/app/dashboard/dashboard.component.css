@@ -1,0 +1,50 @@
+.fg-col {
+  background-color: var(--fg-black);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.left {
+  display: grid;
+  gap: 1%;
+  height: 90vh;
+  grid-template-rows: repeat(2, 20% 79.5%);
+}
+
+.right {
+  display: grid;
+  height: 90.5vh;
+}
+
+.fg-col-main {
+  padding: none !important;
+  background-color: var(--fg-black);
+  border-radius: 0.5rem;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 23% 76.5%);
+  gap: 0.5%;
+}
+
+.search-component {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.home,
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.router-outlet {
+  padding: 1rem;
+  padding-top: 0.7rem;
+  height: 67vh;
+  overflow-y: scroll;
+}

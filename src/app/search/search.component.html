@@ -1,0 +1,65 @@
+<div class="browse-container">
+  @if(show){
+  <div class="static-info">
+    <h2>Browse All</h2>
+    <div class="browse-grid">
+      @for(item of allBrowses; track item){
+      <div class="card">
+        <img [src]="item.icons[0].url" alt="card.png" class="card-img" />
+        <span class="card-name">{{ item.name }}</span>
+      </div>
+      }
+    </div>
+  </div>
+  }@else {
+  <div class="search-content">
+    <div class="top-result">
+      <div class="search-left">
+        <div class="top-card">
+          <h3 class="top-result">Top Result</h3>
+          <img [src]="searchResult.album.images[0].url" alt="" />
+          <h2>{{ searchResult.name }}</h2>
+          <div class="flex">
+            <span class="track-name">{{ searchResult.type }}</span>
+            <i class="fa-sharp fa-solid fa-circle-play fa-2xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="search-right">
+        <h3>Songs</h3>
+        @for(songs of allSearchResult; track songs){
+        <div class="items">
+          <img
+            class="songs-image"
+            [src]="songs.album.images[0].url"
+            alt="library.png"
+          />
+          <div class="items-info-flex">
+            <span class="items-name">{{ songs.name }}</span>
+            <span class="items-username">{{ songs.artists[0].name }}</span>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+    <div class="featuring">
+      <h3>Featuring</h3>
+      <div class="featuring-div">
+        @for(artist of featuringArtists; track artist){
+        <div class="featuring-card">
+          <div class="card">
+            <img
+              [src]="artist.images[0].url"
+              alt="card.png"
+              class="artist-img"
+            />
+            <span class="card-name">{{ artist.name }}</span>
+            <span class="card-name">{{ artist.type }}</span>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+  }
+</div>

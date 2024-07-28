@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  height: 97.2vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+img {
+  width: 40%;
+}
